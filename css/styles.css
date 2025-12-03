@@ -1,0 +1,220 @@
+/* Name: Casper Villagrana
+	Date: 12/2/2025
+	File: styles.css
+
+/* CCS Reset default setting */
+body,header,nav,li,ul,a,main,img,h1,h3,audio, video,div,footer{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+/* Body General Style */
+body{
+	background-color:#e6cbe5;
+	color: #17344e;
+
+}
+
+/* Images General Style */
+
+img{
+	max-width:100%;
+	display:block;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 12px;
+
+}
+
+#header img{
+	max-width: 100%;
+	height: 205px;
+	border-radius: 12px;
+}
+
+/* Header Style */
+
+header{
+	text-align:center;
+	padding:1%;
+}
+
+header h1{
+	font-size:3em;
+	font-family:Garamond, Times,serif;
+}
+
+header h3{
+	font-style:italic;
+	font-size:1.25em;
+	font-family:Futura, Arial,sans-serif;
+}
+
+
+/* Navigation Style */
+nav{
+	background-color:#40578a;
+}
+
+nav ul{
+	list-style-type:none;
+	margin:0;
+	text-align:center;
+}
+
+nav li{
+	display:inline-block;
+	font-size:1em;
+	font-family:Verdana,Arial,sans-serif;
+	font-weight:bold;
+}
+
+nav li a{
+	display:block;
+	text-align:center;
+	padding:0.5em 1em;
+	text-decoration:none;
+	color:#c7c7c7;
+}
+
+/* Hover Style */
+nav a:hover{
+	color:#f0b9e9;
+}
+
+
+
+/* Main Style */
+main{
+	padding:2%;
+	background-color:#aaddfd;
+	font-family:georgia,sans-serif;
+}
+h2{
+	color:#A0C382;
+	text-align: center;
+}
+#welcome {
+    text-align: center;
+}
+
+#clubs{
+	text-align: center;
+}
+
+#events{
+	text-align: center;
+}
+
+p{
+	color:#9b9b9b;
+	font-size:1.25em;
+}
+
+main a{
+	text-decoration:none;
+	color:#d8e5ff;
+	font-weight:bold;
+}
+
+main ul{
+	list-style-type:square;
+	font-size:1.15em;	
+}
+
+.action{
+	color:#6f92dd;
+}
+/* Video Style */
+#video{
+    text-align: center;
+}
+
+video{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Audio Style */
+#audio{
+    text-align: center;    
+}
+
+/* Footer Style */
+footer{
+	text-align:center;
+	font-size:0.75em;
+	color:#ffe6e6;
+	font-weight:bold;
+}
+
+footer p{
+	color:#FFF;
+}
+footer a{
+	color:#FFF;
+	text-decoration:none;	
+}
+
+
+.container {
+  display: flex;
+  text-align: center;
+  align-items:center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+  background-color: rgb(136, 196, 255);
+}
+
+.container div {
+  background-color: #e6efff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+/* Mobile Style */
+@media (max-width: 600px){
+
+	main h2{
+		text-align: center;
+		font-family: "Archivo Black", sans-serif;
+  		font-weight: 400;
+  		font-style: normal;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+
+	nav ul li {
+		display: block;
+		border: 2px solid black;
+	}
+
+	nav ul li a:hover{
+		color:#c382c0;
+	}
+
+	nav ul li a:visited{
+		color:#8d79ff;
+	}
+
+	nav ul li a:active{
+		color:#c1a0ff;
+	}
+
+
+	.mobile {
+		display: none;
+	}
+
+}
