@@ -7,23 +7,41 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+function confirmSubmission() {
+  // You can customize the confirmation message here
+  var confirmationMessage = "Confirm submission?";
+
+  // Display the confirmation dialog
+  if (confirm(confirmationMessage)) {
+    // If the user clicks "OK", allow the form to submit
+    return true;
+  } else {
+    // If the user clicks "Cancel", prevent the form from submitting
+    return false;
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Hanalei+Fill&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
   <title>Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
-<div class="w3-container w3-padding-16">
+<div class="bg">
 <body>
   <header>
-    <h1>Contact</h1>
+    <img src="images/logo.png" height="200" width="300" alt="seal logo">
   </header>
 
   <!-- Navigation -->
   <nav>
     <ul>
     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
 		<li><a href="adoption.html">Adoption</a></li>
@@ -32,21 +50,36 @@
     </ul>
   </nav>
 
-  <main>
-    <div id="clubs">
-      <img src="images/blue_ice.png" height="200" width="300" alt="blue ice">
+  <div class="container"> 
+	<main>
+       <div id="welcome">
+          <img src="images/sealmail.gif" height="200" width="300" alt="seal mail">
       <h1>Contact Us</h1>
-  	<a href="tel:+7732655343">Call us at (773-SEALS)</a>
-		<p>&copy; Seal Blog</p></p>
-		<a href="mailto:youremail@example.com">Send Email</a>
-
-  </main>
-
+   <form id="myForm" onsubmit="return confirmSubmission()">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="First Name"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Last Name"><br>
+      <label for="lname">Your favorite seal:</label><br>
+			<input type="text" id="favorite" name="favorite" value="Your favorite seal"><br>
+			<label for="lname">Message:</label><br>
+      <textarea name="message" rows="10" cols="30">
+      Message Here
+      </textarea><br>
+			<input type="submit" value="Submit">
+		</form>
+	
+    <p>Caring for seals and sea lions on a daily basis requires tremendous amounts of resources! From a proper diet of fish to enrichment items, we are continually ensuring that our animals have everything they need to be happy, healthy, and successful. Feel free to contact us for anything about seals!</p>
   <footer>
 		<a href="tel:+7732655343">Call us at (773-SEALS)</a>
 		<p>&copy; Seal Blog</p></p>
     <a href="mailto:youremail@example.com">Send Email</a>
   </footer>
+    </div>
+		</div>
+
+  
+</main>
 </body>
 </div>
 

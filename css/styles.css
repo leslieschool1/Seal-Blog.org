@@ -4,17 +4,19 @@
 
 /* CCS Reset default setting */
 body,header,nav,li,ul,a,main,img,h1,h3,audio, video,div,footer{
+	
 	margin:0;
 	padding:0;
 	border:0;
 }
 
-
 /* Body General Style */
-body{
-	background-color:#e6cbe5;
-	color: #17344e;
 
+.bg{
+	background-image: url("../images/sealsbg.png");
+	background-size: 65em;
+	background-repeat: repeat;
+ 	background-position: left;
 }
 
 /* Images General Style */
@@ -25,7 +27,6 @@ img{
 	height: auto;
 	margin: 0 auto;
 	border-radius: 12px;
-
 }
 
 #header img{
@@ -37,25 +38,34 @@ img{
 /* Header Style */
 
 header{
+	color: #000000;
+	font-family: "Hanalei Fill", system-ui;
+	font-size: 2.5em;
+  	font-weight: 400;
+  	font-style: normal;
 	text-align:center;
 	padding:1%;
 }
 
 header h1{
 	font-size:3em;
-	font-family:Garamond, Times,serif;
+	font-family: "Hanalei Fill", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
 }
 
 header h3{
 	font-style:italic;
 	font-size:1.25em;
-	font-family:Futura, Arial,sans-serif;
+	font-family: "Hanalei Fill", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
 }
 
 
 /* Navigation Style */
 nav{
-	background-color:#40578a;
+	background-color:#0f0f0f;
 }
 
 nav ul{
@@ -66,9 +76,10 @@ nav ul{
 
 nav li{
 	display:inline-block;
-	font-size:1em;
-	font-family:Verdana,Arial,sans-serif;
-	font-weight:bold;
+	font-size:1.5em;
+	font-family: "Hanalei Fill", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
 }
 
 nav li a{
@@ -76,12 +87,12 @@ nav li a{
 	text-align:center;
 	padding:0.5em 1em;
 	text-decoration:none;
-	color:#c7c7c7;
+	color:#ffffff;
 }
 
 /* Hover Style */
 nav a:hover{
-	color:#f0b9e9;
+	color:#d3ced2;
 }
 
 
@@ -89,28 +100,66 @@ nav a:hover{
 /* Main Style */
 main{
 	padding:2%;
-	background-color:#aaddfd;
-	font-family:georgia,sans-serif;
+	background-color:#8b959b;
+	font-family:"Chelsea Market", system-ui;
 }
+
+h1{
+	font-family: "Chelsea Market", system-ui;
+}
+
 h2{
-	color:#A0C382;
-	text-align: center;
-}
-#welcome {
-    text-align: center;
-}
-
-#clubs{
+	font-family: "Chelsea Market", system-ui;
+	color:#ffffff;
 	text-align: center;
 }
 
-#events{
-	text-align: center;
+h3{
+	color: white;
+	font-family: "Chelsea Market", system-ui;
 }
+
+form, #myForm {
+	font-family: "Chelsea Market", system-ui;
+ 	font-weight: 400;
+  	font-style: normal;
+	color:#ffffff;
+	font-size:1.25em;
+}
+
 
 p{
-	color:#9b9b9b;
+	font-family: "Chelsea Market", system-ui;
+ 	font-weight: 400;
+  	font-style: normal;
+	color:#ffffff;
 	font-size:1.25em;
+}
+
+table, th, td {
+	background: #ffffff;
+	border: 2px white;
+	border-style: dashed;
+	border-color:#000000;
+	color:#000000;
+	font-weight:bold;
+	font-size: 1.2em;
+	text-align: center;
+	font-family: "Chelsea Market", system-ui;
+}
+
+hr {
+	color:#ffffff;
+}
+
+#welcome {
+	text-align: center;
+
+}
+
+figure {
+		text-align: center;
+	font-family: "Chelsea Market", system-ui;
 }
 
 main a{
@@ -125,7 +174,7 @@ main ul{
 }
 
 .action{
-	color:#6f92dd;
+	color:#ffffff;
 }
 /* Video Style */
 #video{
@@ -133,12 +182,16 @@ main ul{
 }
 
 video{
+	max-width:80%;
     margin: 10px;
     border-radius: 10px;
+	width: 100%; /* Ensures it scales with its parent element */
+  	aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
 }
 
 /* Audio Style */
 #audio{
+	color:#000000;
     text-align: center;    
 }
 
@@ -146,38 +199,53 @@ video{
 footer{
 	text-align:center;
 	font-size:0.75em;
+	font-family: "Chelsea Market", system-ui;
 	color:#ffe6e6;
 	font-weight:bold;
 }
 
 footer p{
 	color:#FFF;
+	font-family: "Chelsea Market", system-ui;
 }
 footer a{
+	font-family: "Chelsea Market", system-ui;
 	color:#FFF;
 	text-decoration:none;	
 }
 
 
 .container {
+  font-family: "Hanalei Fill", system-ui;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   text-align: center;
   align-items:center;
   align-content: center;
   flex-wrap: wrap;
   align-content: stretch;
-  background-color: rgb(136, 196, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 .container div {
-  background-color: #e6efff;
+  font-family: "Chelsea Market", system-ui;
+  color: white;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #000000;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
   align-content: stretch;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Mobile Style */
@@ -197,21 +265,20 @@ footer a{
 
 	nav ul li {
 		display: block;
-		border: 2px solid black;
+		border: 2px solid rgb(43, 60, 156);
 	}
 
 	nav ul li a:hover{
-		color:#c382c0;
+		color:#a7a7a7;
 	}
 
 	nav ul li a:visited{
-		color:#8d79ff;
+		color:#ffffff;
 	}
 
 	nav ul li a:active{
-		color:#c1a0ff;
+		color:#d6d6d6;
 	}
-
 
 	.mobile {
 		display: none;

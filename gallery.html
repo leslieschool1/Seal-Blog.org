@@ -6,26 +6,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<style>
-	p.dotted {border-style: dotted;}
-	</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Hanalei+Fill&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
 	<title>Gallery</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
-<div class="w3-container w3-padding-16">
-<body>
+
+<body><div class="bg">
 	<header>
-		<h1>Gallery</h1>
+		<img src="images/logo.png" height="200" width="300" alt="seal logo">
 	</header>
 
 	<!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
 			<li><a href="adoption.html">Adoption</a></li>
@@ -33,34 +34,47 @@
 			<li><a href="locations.html">Locations</a></li>
         </ul>
     </nav>
-	<div class="container">
-	<main>	<p class="dotted">
-  <div id="events"><p>Seals come in many shapes and sizes, and sounds too!</p>
+
+	<main>	
+		<div class="flex-container">
+		<img src="images/harborinfo.png" alt="seal infographic">
 		<div id="video">
+			<p>Seals come in many shapes and sizes!</p>
 			<video controls>
 				<source src="Media/seal_video.mp4" type="video/mp4">
 				<track src="Media/sub.vtt" kind="captions" srclang="en" label="Captions">
 				<p>Your browser does not support the video element.</p>
 			</video>		
-			<img src="images/seal_1.jpg" height="200" width="300" alt="seal laying down">
-			<img src ="images/seal_sleeping.jpg" height="200" width="300" alt = "seal sleeping">
-			<img src ="images/weddell_seal.jpg" height="200" width="300" alt = "weddell seal">
+
+			<video controls>
+				<source src="Media/seal_video2.mp4" type="video/mp4">
+				<track src="Media/sub.vtt" kind="captions" srclang="en" label="Captions">
+				<p>Your browser does not support the video element.</p>
+			</video>		
+
+			<video controls>
+				<source src="Media/seal_video3.mp4" type="video/mp4">
+				<track src="Media/sub.vtt" kind="captions" srclang="en" label="Captions">
+				<p>Your browser does not support the video element.</p>
+			</video>		
+
+			<video controls>
+				<source src="Media/seal_video4.mp4" type="video/mp4">
+				<track src="Media/sub.vtt" kind="captions" srclang="en" label="Captions">
+				<p>Your browser does not support the video element.</p>
+			</video>		
+					
 		</div> 
-	
-        	<div id="audio">
-		<h3>Weddell Seal Call</h3>
-		<audio controls="controls" autoplay="autoplay">
-			<source src="Media/audio_1.mp3" type="audio/mp3">
-			<p>Your browser does not support the audio element.</p>
-		</audio>
-	</div></div>
-	</main>
-	</div>
-	<footer>
+		</div>
+		<p>&nbsp;</p>
+		<footer>
 		<a href="tel:+7732655343">Call us at (773-SEALS)</a>
 		<p>&copy; Seal Blog</p></p>
 		<a href="mailto:youremail@example.com">Send Email</a>
 	</footer>
+	</main>
+	</div>
+	
 </body>
 </div>
 
